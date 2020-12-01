@@ -1,0 +1,26 @@
+{
+  "name": "comp.se.200_assignment",
+  "version": "1.0.0",
+  "description": "Assignment for a software testing course",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EeroLempio/COMP.SE.200_assignment.git"
+  },
+  "author": "Eero Lempiö",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EeroLempio/COMP.SE.200_assignment/issues"
+  },
+  "homepage": "https://github.com/EeroLempio/COMP.SE.200_assignment#readme",
+  "devDependencies": {
+    "jest": "^26.6.3",
+    "jest-cli": "^26.6.3"
+  },
+  "pre-commit": [
+    "test"
+  ]
+}
