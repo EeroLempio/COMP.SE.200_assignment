@@ -4,7 +4,7 @@
   "description": "Assignment for a software testing course",
   "main": "index.js",
   "scripts": {
-    "test": "NODE_ENV=test ENV=test jest test/"
+    "test": "jest test/"
   },
   "repository": {
     "type": "git",
