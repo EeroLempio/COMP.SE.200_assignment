@@ -4,7 +4,7 @@
   "description": "Assignment for a software testing course",
   "main": "index.js",
   "scripts": {
-    "test": "jest test/"
+    "test": "NODE_ENV=test ENV=test jest test/"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,8 @@
   },
   "homepage": "https://github.com/EeroLempio/COMP.SE.200_assignment#readme",
   "devDependencies": {
+    "@babel/plugin-transform-modules-commonjs": "^7.12.1",
+    "@types/jest": "^26.0.16",
     "jest": "^26.6.3",
     "jest-cli": "^26.6.3",
     "pre-commit": "^1.2.2"
