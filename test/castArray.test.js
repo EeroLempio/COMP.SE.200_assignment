@@ -8,7 +8,5 @@ describe('castArray', () =>{
     expect(castArray(null)).toEqual([null]);
     expect(castArray(undefined)).toEqual([undefined]);
     expect(castArray([1, 2, 3])).toEqual([1, 2, 3]);
-    //expect(castArray()).toEqual([]);
-
   });
 });
