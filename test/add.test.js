@@ -10,7 +10,7 @@ describe('add', () =>{
   });
 
   test('missing params result in default value', () =>{
-    expect(add()).toBe(10);
+    expect(add()).toBe(0);
     expect(add(1, null)).toBe(1);
     expect(add(null, 1)).toBe(1);
   });
