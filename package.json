@@ -4,7 +4,8 @@
   "description": "Assignment for a software testing course",
   "main": "index.js",
   "scripts": {
-    "test": "jest test/"
+    "test": "jest test/",
+    "coveralls": "jest --coverage && cat ./tests/coverage/lcov.info | coveralls"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.12.1",
     "@types/jest": "^26.0.16",
+    "coveralls": "^3.1.0",
     "jest": "^26.6.3",
     "jest-cli": "^26.6.3",
     "pre-commit": "^1.2.2"
