@@ -1,5 +1,11 @@
 {
   "name": "comp.se.200_assignment",
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/.internal/**/*.js"
+    ]
+  },
   "version": "1.0.0",
   "description": "Assignment for a software testing course",
   "main": "index.js",
