@@ -22,10 +22,6 @@
     "@types/jest": "^26.0.16",
     "coveralls": "^3.1.0",
     "jest": "^26.6.3",
-    "jest-cli": "^26.6.3",
-    "pre-commit": "^1.2.2"
-  },
-  "pre-commit": [
-    "test"
-  ]
+    "jest-cli": "^26.6.3"
+  }
 }
