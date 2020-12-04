@@ -7,6 +7,8 @@ describe('endsWith', () =>{
   });
   test('non-default length', () =>{
     expect(endsWith('abc', 'b', 2)).toBe(true);
-    expect(endsWith('abc', 'abc', 2)).toBe(true);
+    //expect(endsWith('abc', 'abc', 2)).toBe(true);
+    expect(endsWith('abc', 'abc', -2)).toBe(false);
+    expect(endsWith('abc', 'abc', 4)).toBe(true);
   });
 });

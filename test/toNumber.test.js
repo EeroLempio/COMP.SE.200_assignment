@@ -6,5 +6,7 @@ describe('toNumber', () =>{
     expect(toNumber(Number.MIN_VALUE)).toStrictEqual(5e-324);
     expect(toNumber(Infinity)).toStrictEqual(Infinity);
     expect(toNumber('3.2')).toStrictEqual(3.2);
+    expect(toNumber(Symbol.iterator)).toStrictEqual(NaN);
+    expect(toNumber({})).toStrictEqual(NaN);
   });
 });
