@@ -1,6 +1,6 @@
 import endsWith from '../src/endsWith'
 
-describe('endwWith', () =>{
+describe('endsWith', () =>{
   test('default length', () =>{
     expect(endsWith('abc', 'c')).toBe(true);
     expect(endsWith('abc', 'b')).toBe(false);
