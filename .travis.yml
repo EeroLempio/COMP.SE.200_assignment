@@ -6,3 +6,15 @@ script:
   - npm run coverage
 after_script:
   - npm run coveralls
+addons:
+  provider: s3
+  access_key_id: AKIAWRMXQUEEF6MKVVFP
+  secret_access_key:
+    secure: VW+GAmtD4prmdOvW3cRRlCXM47gK9ODzGtBogLQFi/jXgFXOOMHVFIO+ch/BpYXVNwJVjUV49DTbzkbmD+FO56w1/q/IP9Ll5CaQPencauCvm6b0mnjaJLT8I63zljhEAKCUU+gbXRPQy+z7wadohD/RgSn5IAFYepidAlUp8ZPfJNBFCMEf4+luVVCUq2/dY11XrLnd1a4khSH7H/4VPUwCptvfYkMS/ywVrjZ0O4A+uCubMq+8yHesKOgcYo2bcIH5+iYWeYZ2CQ37OJoxiza6NjckjEyzUQwJFMLyMyBdwZZAynh4Dk+4zwxxS2TUtdkunZsP6XZw4fst9e/4RaxU5CM3aKdur7+I7Kcj71/vCZ9pbnTW6vNEg9io9d4g73ZSCWq0esqlTBdPyI5G0/71i7qJNNb5JygHth7KOLA9sv/dZPPB3iWT7OeoHGThR9yCFqBB+zBczYzBdB5fDyffWurVyUmxgAkBxRBG7VQQ2wKwwvcijZvXK9uFakrb0Pv2sPsbn0nJ2Wt/bD39ZXI5q+icKz0y3JodjK1xD0+Xj736I1H9sgnGZvZe9a+Fdi2Nw/dl45xjRVx4202iS8qz7f6pn7G2O0DRFECWVUOiG2Aw/jj9Yxv1FPRVZUZ+OWy+9ZQxHNUK5TsocGGBunPjeGdZlVB9zZShjLPZN4k=
+  bucket: comp.se.200-coverage-reports
+  acl: public_read
+  on:
+    repo: EeroLempio/COMP.SE.200_assignment
+    branch: 'main'
+  skip_cleanup: 'true'
+  local_dir: coverage/lcov-report
