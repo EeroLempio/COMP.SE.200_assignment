@@ -6,7 +6,7 @@ script:
   - npm run coverage
 after_script:
   - npm run coveralls
-addons:
+deploy:
   provider: s3
   region: eu-west-1
   access_key_id: AKIAWRMXQUEEF6MKVVFP
