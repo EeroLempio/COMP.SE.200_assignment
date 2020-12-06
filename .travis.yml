@@ -16,6 +16,6 @@ deploy:
   acl: public_read
   on:
     repo: EeroLempio/COMP.SE.200_assignment
-    branch: 'main'
+    branch: '08_aws_tooling'
   skip_cleanup: 'true'
   local_dir: coverage/lcov-report
