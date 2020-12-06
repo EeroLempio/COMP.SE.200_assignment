@@ -4,6 +4,7 @@ describe('divide', () =>{
   test('legal values', () =>{
     expect(divide(6, 6)).toStrictEqual(1);
     /* FAILS
+    The result seems to be always one
     expect(divide(20, 2)).toStrictEqual(10);
     expect(divide(100, 25)).toStrictEqual(4);
     expect(divide(6,4)).toStrictEqual(1.5);

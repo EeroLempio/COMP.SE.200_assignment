@@ -8,6 +8,8 @@ describe('eq', () =>{
     expect(eq(object, other)).toStrictEqual(false);
     expect(eq('a', 'a')).toStrictEqual(true);
     /* FAILS
+    This is an example case from the functions own
+    documentation, and works contrary to what is described
     expect(eq('a', Object('a'))).toStrictEqual(false);
     */
     expect(eq(NaN, NaN)).toStrictEqual(true);
