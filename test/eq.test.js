@@ -8,6 +8,6 @@ describe('eq', () =>{
     expect(eq(object, other)).toStrictEqual(false);
     expect(eq('a', 'a')).toStrictEqual(true);
     //expect(eq('a', Object('a'))).toStrictEqual(false);
-    //expect(eq(NaN, NaN)).totoStrictEqualBe(true);
+    //expect(eq(NaN, NaN)).toStrictEqualBe(true);
   });
 });
