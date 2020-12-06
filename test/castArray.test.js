@@ -9,6 +9,8 @@ describe('castArray', () =>{
     expect(castArray(undefined)).toEqual([undefined]);
     expect(castArray([1, 2, 3])).toEqual([1, 2, 3]);
     /* FAILS
+    Returns an array with a single undefined element
+    contrary to how it was documented
     expect(castArray()).toStrictEqual([]);
     */
   });

@@ -7,6 +7,9 @@ describe('defaultToAny', () =>{
   });
   test('default value is returned', () =>{
     /* FAILS
+    This couldnt have worked anyway, because this uses
+    defaultTo under the hood, and it's implementation
+    has been shown to be broken
     expect(defaultToAny(NaN, 10)).toBe(10);
     expect(defaultToAny(undefined, 10)).toBe(10);
     expect(defaultToAny(NaN, null, 10)).toBe(10);

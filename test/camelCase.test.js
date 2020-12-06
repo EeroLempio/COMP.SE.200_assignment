@@ -8,8 +8,5 @@ describe('camelCase', () =>{
   });
   test('incorrect input', () =>{
     expect(camelCase(2)).toBe(" 2");
-    /* FAILS
-    expect(camelCase({foo: "bar"})).toBe({"foo": "bar"});
-    */
   });
 });
