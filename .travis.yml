@@ -4,8 +4,6 @@ node_js:
   - 13
 script:
   - npm run coverage
-  - ls coverage
-  - ls coverage/lcov-report
 after_script:
   - npm run coveralls
 deploy:
@@ -19,5 +17,5 @@ deploy:
   on:
     repo: EeroLempio/COMP.SE.200_assignment
     branch: '08_aws_tooling'
-  cleanup: 'false'
+  skip_cleanup: 'true'
   local_dir: ./coverage/lcov-report
