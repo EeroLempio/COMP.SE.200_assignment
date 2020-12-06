@@ -18,4 +18,4 @@ deploy:
     repo: EeroLempio/COMP.SE.200_assignment
     branch: 'main'
   skip_cleanup: 'true'
-  local_dir: coverage/lcov-report
+  local_dir: ./coverage/lcov-report
