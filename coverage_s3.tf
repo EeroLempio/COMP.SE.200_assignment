@@ -19,7 +19,12 @@ resource "aws_s3_bucket_policy" "s3_bucket_policy" {
             "Effect": "Allow",
             "Principal": "*",
             "Action": [
-                "s3:GetObject"
+                "s3:AbortMultipartUpload",
+                "s3:DeleteObject",
+                "s3:GetObject",
+                "s3:GetObjectAcl",
+                "s3:PutObject",
+                "s3:PutObjectAcl"
             ],
             "Resource": [
                 "arn:aws:s3:::${aws_s3_bucket.s3_bucket.bucket}/*"
@@ -55,7 +60,14 @@ resource "aws_iam_user_policy" "iam_user_policy" {
   "Version": "2012-10-17",
   "Statement": [
     {
-      "Action": "s3:PutObject",
+      "Action": [
+          "s3:AbortMultipartUpload",
+          "s3:DeleteObject",
+          "s3:GetObject",
+          "s3:GetObjectAcl",
+          "s3:PutObject",
+          "s3:PutObjectAcl"
+      ],
       "Effect": "Allow",
       "Resource": "arn:aws:s3:::${aws_s3_bucket.s3_bucket.bucket}/*"
     }
